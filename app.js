@@ -8,7 +8,20 @@ form.addEventListener("submit",(e)=>{
   let phoneNum = e.target.phoneNum.value;
   let grade = e.target.grade.value;
   render(name, age, gender,phoneNum,grade);
+  var row = table.insertRow(-1);
+  var cell1 = row.insertCell(0);
+  cell1.innerHTML=(name);
+  var cell2 = row.insertCell(1);
+  cell2.innerHTML=(age);
+  var cell3 = row.insertCell(2);
+  cell3.innerHTML=(gender);
+  var cell4 = row.insertCell(3);
+  cell4.innerHTML=(phoneNum);
+  var cell5 = row.insertCell(4);
+  cell5.innerHTML=(grade);
+
 });
+
 
 
 function render(name, age, gender,phoneNum,grade){
@@ -24,12 +37,12 @@ genderj.textContent = gender;
 phonej.textContent = phoneNum;
 gradej.textContent = grade;
 
-// newRow.appendChild(row);
-table.appendChild(namej);
-table.appendChild(agej);
-table.appendChild(genderj);
-table.appendChild(phonej)
-table.appendChild(gradej);
+// // newRow.appendChild(row);
+// table.appendChild(namej);
+// table.appendChild(agej);
+// table.appendChild(genderj);
+// table.appendChild(phonej)
+// table.appendChild(gradej);
 
 
 };
