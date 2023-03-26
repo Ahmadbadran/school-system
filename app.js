@@ -1,4 +1,4 @@
-const currentDiv = document.getElementById("tr");
+const table = document.getElementById("myTable");
 const form = document.getElementById("regForm");
 form.addEventListener("submit",(e)=>{
   e.preventDefault();
@@ -7,7 +7,6 @@ form.addEventListener("submit",(e)=>{
   let gender = e.target.gender.value;
   let phoneNum = e.target.phoneNum.value;
   let grade = e.target.grade.value;
-
   render(name, age, gender,phoneNum,grade);
 });
 
@@ -25,12 +24,12 @@ genderj.textContent = gender;
 phonej.textContent = phoneNum;
 gradej.textContent = grade;
 
-
-currentDiv.appendChild(namej);
-currentDiv.appendChild(agej);
-currentDiv.appendChild(genderj);
-currentDiv.appendChild(phonej)
-currentDiv.appendChild(gradej);
+// newRow.appendChild(row);
+table.appendChild(namej);
+table.appendChild(agej);
+table.appendChild(genderj);
+table.appendChild(phonej)
+table.appendChild(gradej);
 
 
 };
