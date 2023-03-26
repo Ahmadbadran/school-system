@@ -29,7 +29,7 @@
   }
   
   header {
-    background-image : url(/assets/person-holding-light-bulb-with-graduation-cap.jpg);
+    background-image : url(./assets/person-holding-light-bulb-with-graduation-cap.jpg);
     /* min-height: 100vh; */
     width: 100%;
     height: 100vh;
