@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-      
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
@@ -25,7 +26,7 @@
             ><h2 class="logo">School<span>System</span></h2></a
           >
         </div>
-        <div class="container">
+        <div class="container1">
           <div id="mainListDiv" class="main_list">
             <ul class="navlinks">
               <li><a href="#">Home</a></li>
@@ -47,20 +48,23 @@
         <br />
         <h3>Let us guide your learning Journey join us<span> Now!</span></h3>
 
-        <div><a class="btn" href="#regForm">Join Us!</a></div>
       </section>
     </header>
     <main class="main">
-      <div class="login-box">
+      <div class="login-box container">
         <h2>Registration Form</h2>
-        <form id="regForm">
+        <form id="regForm" > 
           <div class="user-box fullname">
-            <input type="text" name="fullName" required />
+            <input type="text" name="fullName" required  />
             <label>FullName</label>
           </div>
           <div class="user-box dob">
-            <input type="date" name="dob" required />
+            <input type="date" name="dob" required  />
             <label>Date Of Birth</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="imgUrl" required />
+            <label>Image Url</label>
           </div>
           <label for="gender">gender</label>
           <div class="gender">
@@ -85,6 +89,51 @@
               <label for="female">female</label>
             </div>
           </div>
+<br>
+          <label for="major">Major</label>
+          <br>
+          <div class="major">
+            <div class="user-box">
+              <input
+                type="radio"
+                id="IT"
+                name="major"
+                required=""
+                value="IT"
+              />
+              <label for="IT">IT</label>
+            </div>
+            <div class="user-box">
+              <input
+                type="radio"
+                id="administration"
+                name="major"
+                required=""
+                value="administration"
+              />
+              <label for="administration">admin</label>
+            </div>
+            <div class="user-box">
+              <input
+                type="radio"
+                id="science"
+                name="major"
+                required=""
+                value="science"
+              />
+              <label for="science">science</label>
+            </div>
+            <div class="user-box">
+              <input
+                type="radio"
+                id="art"
+                name="major"
+                required=""
+                value="art"
+              />
+              <label for="art">art</label>
+            </div>
+          </div>
           <div class="user-box">
             <input type="text" name="phoneNum" required="" />
             <label>Phone Number</label>
@@ -93,50 +142,34 @@
             <input type="text" name="grade" required="" />
             <label>Grade</label>
           </div>
-         <input class="btn" type="submit" value="submit">
+          <input class="btn" type="submit" value="submit" />
         </form>
       </div>
-      <div id="table">
-        <table class="table" id="myTable">
-           
-            <tbody id="tbod">
-              <tr>
-                
-                <td>Name</td>
-                <td>Birth date</td>
-                <td>Gender</td>
-                <td>Phone Number</td>
-                <td>Grade</td>
-              </tr>
-              
-              <tr>
-              
-                
-              </tr>
-    
-            
-              
-            </tbody>
-          </table>
-      </div>
+      
+      <div class="container" id="containerBig">
+        <div class="wrapper" id="wrapper">
+                 
+          
+         </div>
+         
+           </div>
+       </div>
     </main>
-<footer class="footer-distributed">
-
+    <footer class="footer-distributed">
       <div class="footer-left">
-
         <h3>Company<span>logo</span></h3>
 
         <p class="footer-links">
           <a href="#" class="link-1">Home</a>
-          
+
           <a href="#">Blog</a>
-        
+
           <a href="#">Pricing</a>
-        
+
           <a href="#">About</a>
-          
+
           <a href="#">Faq</a>
-          
+
           <a href="#">Contact</a>
         </p>
 
@@ -144,7 +177,6 @@
       </div>
 
       <div class="footer-center">
-
         <div>
           <i class="fa fa-map-marker"></i>
           <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
@@ -159,27 +191,22 @@
           <i class="fa fa-envelope"></i>
           <p><a href="mailto:support@company.com">support@company.com</a></p>
         </div>
-
       </div>
 
       <div class="footer-right">
-
         <p class="footer-company-about">
           <span>About the company</span>
-          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
+          euismod convallis velit, eu auctor lacus vehicula sit amet.
         </p>
 
         <div class="footer-icons">
-
           <a href="#"><i class="fa fa-facebook"></i></a>
           <a href="#"><i class="fa fa-twitter"></i></a>
           <a href="#"><i class="fa fa-linkedin"></i></a>
           <a href="#"><i class="fa fa-github"></i></a>
-
         </div>
-
       </div>
-
     </footer>
     <script src="app.js"></script>
   </body>
